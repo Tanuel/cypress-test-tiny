@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        const timeout = setTimeout(() => {
+            document.getElementById("logger").textContent = "captcha timeout"
+        }, 3000);
+        grecaptcha.ready(function () {
+            clearTimeout(timeout);
+            document.getElementById("logger").textContent = "captcha success"
+        });
+    </script>
+</head>
+<body>
+<p>Watch browser logs in cypress test to see error message</p>
+<p>Captcha status: <span id="logger">awaiting captcha load</span></p>
+</body>
+</html>
