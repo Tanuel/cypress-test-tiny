@@ -1,5 +1,7 @@
 Example of a bug in Cypress 5.5.0
 
+See [cypress-io/cypress#8983](https://github.com/cypress-io/cypress/issues/8983)
+
 Running instructions:
 
 * `npm install`
